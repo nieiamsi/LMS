@@ -29,8 +29,7 @@ MYSQL* connectDB() {
     MYSQL* conn = mysql_init(NULL);
     if (conn == NULL) return nullptr;
 
-    // Use these credentials (matching your image_78b299.png)
-    // The NULL, 0 at the end handles the modern connection handshake
+    
     if (mysql_real_connect(conn, "127.0.0.1", "root", "@helu921my", "LMS_DB", 3306, NULL, 0)) {
         return conn;
     } else {
