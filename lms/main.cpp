@@ -3,7 +3,6 @@
 #include <string>
 #include <map>
 #include <limits>
-// UPDATED: Standard MySQL header for Connector/C
 #include <mysql.h>
 
 using namespace std;
