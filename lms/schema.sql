@@ -1,7 +1,6 @@
 CREATE DATABASE LMS_DB;
 USE LMS_DB;
 
--- Primary storage for student profiles
 CREATE TABLE Students (
     student_id INT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
