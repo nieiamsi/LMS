@@ -38,6 +38,6 @@ To ensure maximum data integrity and redundancy:
 ## Prerequisites & Setup
 
 - Compiler: MinGW-w64 (GCC).
-- IDE: VS Code or CodeBlocks.
+- IDE: CodeBlocks.
 - Database: MySQL Community Server.
 - Connector: MySQL Connector/C++ 8.x.
