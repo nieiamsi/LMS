@@ -25,7 +25,6 @@ struct Student {
 map<int, Student> studentMap;
 const string ADMIN_PASS = "admin123";
 
-// UPDATED: New Database Connection Helper using MYSQL pointer
 MYSQL* connectDB() {
     MYSQL* conn = mysql_init(NULL);
     if (conn == NULL) return nullptr;
@@ -41,7 +40,6 @@ MYSQL* connectDB() {
     }
 }
 
-// UPDATED: Modified saveToDB using standard MySQL functions
 void saveToDB(Student s) {
     MYSQL* conn = connectDB();
     if (!conn) return;
@@ -58,7 +56,6 @@ void saveToDB(Student s) {
     mysql_close(conn);
 }
 
-// UPDATED: Modified loadFromDB using standard MySQL functions
 void loadFromDB() {
     MYSQL* conn = connectDB();
     if (!conn) return;
@@ -88,7 +85,6 @@ void loadFromDB() {
     mysql_close(conn);
 }
 
-// --- Rest of your code remains the same ---
 
 void logGradeChange(int id, float score) {
     ofstream file("audit_log.txt", ios::app);
