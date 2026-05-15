@@ -32,8 +32,8 @@ The project focuses on efficient RAM usage by employing specific C++ data struct
 To ensure maximum data integrity and redundancy:
 
 - Primary Storage (MySQL): All searchable and structured data (profiles, grades, enrollments) is stored in a relational MySQL database.
-- Secondary Storage (File Handling): \* Audit Trail: An ofstream based audit_log.txt records every instructor modification. This file is immutable (append-only) to provide a secure backup independent of the database.
-  - Content Delivery: Uses ifstream logic to simulate the retrieval of lecture notes and modules.
+- Secondary Storage (File Handling): Audit Trail, an ofstream based audit_log.txt records every instructor modification. This file is immutable (append-only) to provide a secure backup independent of the database.
+- Content Delivery: Uses ifstream logic to simulate the retrieval of lecture notes and modules.
 
 ## Prerequisites & Setup
 
