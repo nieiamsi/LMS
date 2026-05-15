@@ -35,7 +35,7 @@ To ensure maximum data integrity and redundancy:
 - Secondary Storage (File Handling): \* Audit Trail: An ofstream based audit_log.txt records every instructor modification. This file is immutable (append-only) to provide a secure backup independent of the database.
   - Content Delivery: Uses ifstream logic to simulate the retrieval of lecture notes and modules.
 
-## 💻 Prerequisites & Setup
+## Prerequisites & Setup
 
 - Compiler: MinGW-w64 (GCC).
 - IDE: VS Code or CodeBlocks.
